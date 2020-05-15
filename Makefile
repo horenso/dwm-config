@@ -37,7 +37,7 @@ dist: clean
 	gzip dwm-${VERSION}.tar
 	rm -rf dwm-${VERSION}
 
-install: all
+install: clean all
 	mv -f dwm ~/bin/
 	chmod 755 ~/bin/dwm
 	rm -f dwm ${OBJ} dwm-${VERSION}.tar.gz
